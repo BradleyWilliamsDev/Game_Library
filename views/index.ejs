@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+<h1 class="title">Games I've Played:</h1>
+<% games.forEach(game => { %>
+<div class="card">
+  <div class="img"></div>
+  <section class="text">
+    <span hidden><%=game.id%></span>
+    <h3 name="title" class="heading"><%= game.game_title %></h3>
+    <section class="game-rating">
+      <h4 class="heading">Rating:</h4>
+      <p name="rating"><%= game.rating %>/5</p>
+    </section>
+    <p name="summary"><%= game.summary %></p>
+    <section class="cta_section">
+      <div class="btn-style">
+        <a class="cta_btn" href="/edit/<%= game.id %>">Edit Review</a>
+      </div>
+      <div class="btn-style">
+        <a class="cta_btn" href="/delete/<%= game.id %>">Delete Review</a>
+      </div>
+    </section>
+  </section>
+</div>
+<% }); %>
+
+<form action="/add" method="post">
+  <button  class="btn-style add">Add</button>
+</form>

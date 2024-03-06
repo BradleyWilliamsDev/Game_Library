@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+
+<form action="/editItem" method="post">
+  <div class="form-container">
+    <input type="hidden" name="gameId" value="<%= postData.id %>" />
+    <label class="label" for="gameName">Game Name</label>
+    <input
+      class="input"
+      type="text"
+      name="gameName"
+      placeholder="Enter the name of the game you played"
+      value="<%= postData.game_title %>"
+      autocomplete="off"
+    />
+    <label class="label" for="gameRating">Game Rating</label>
+    <input
+    class="input"
+      type="number"
+      name="gameRating"
+      min="1"
+      max="5"
+      value="<%= postData.rating %>"
+    />
+    <label class="label" for="gameSummary">Game Summary</label>
+    <textarea class="input" name="gameSummary" cols="30" rows="10">
+<%= postData.summary %></textarea
+    >
+    <button class="btn-style add" type="submit" name="submit">Update</button>
+  </div>
+</form>

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Nanum+Gothic+Coding&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cta_btn {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 25px;
+  min-width: 125px;
+  border-radius: 89px;
+  background: #ad75db;
+  box-shadow: inset 32px 32px 43px #9061b6, inset -32px -32px 43px #ca89ff;
+  color: white;
+}
+
+.btn-style :hover {
+  opacity: 0.5;
+}
+
+.add {
+  margin-bottom: 50px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 15px;
+}
+
+.title {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 125px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e66465;
+  background-color: #ad75db;
+  opacity: 1;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ad75db 20%,
+      #ad75db 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ad75db 20%,
+        #ad75db 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
+    linear-gradient(#d770cb 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, #d770cb 2px, #ad75db 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.card {
+  width: 750px;
+  height: 600px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px #674087, -15px -15px 30px #674087;
+  transition: 0.2s ease-in-out;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.img {
+  width: 100%;
+  height: 25%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: linear-gradient(#d770cb, #ad75db);
+  display: flex;
+  align-items: top;
+  justify-content: right;
+}
+
+.text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.cta_section {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+/* edit section */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+.input {
+  background-color: #292929;
+  border: 1px solid #3e3e3e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 12px 14px;
+  cursor: pointer;
+}
+
+.input:hover {
+  border: 1px solid #fff;
+}
+
+.label {
+  font-family: "Anta", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
